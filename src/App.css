@@ -1,0 +1,269 @@
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  --txt-primary: #c0cfb8;
+  --txt-secondary: #9eb996;
+  --bg-primary: #6b2104;
+  --bg-secondary: #422305;
+  --trans-time: 500ms;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+a{
+  color:#30d3aa;
+  
+}
+a:hover{
+  color:#69c5b6
+}
+
+.home{
+  background-color: #bfdeca;
+  height: 120vh;
+}
+.header-container{
+  display: flex;
+}
+
+.firstname{
+  width: 100%;
+  letter-spacing: 20px;
+  margin-top: 10rem;
+  margin-left: 2rem;
+  font-size:7vw;
+  font-family: Georgia, arial, serif;
+  text-align: right;
+  color: #bcaabe;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto; 
+}
+.lastname{
+  width: 100%;
+  letter-spacing: 20px;
+  margin-top: 10rem;
+  margin-left: 2rem;
+  font-size:7vw;
+  font-family: Georgia, arial, serif;
+  text-align: left;
+  color: #bcaabe;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto; 
+}
+.firstname::first-letter, .lastname::first-letter{
+  font-weight: 700;
+  font-family: "Great Vibes", cursive;
+}
+.title{
+  width: 100%;
+  letter-spacing: 5px;
+  margin-top: 10rem;
+  margin-left: 6rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  font-size: 7vw;
+  font-family: "Zefani Stencil";
+  text-align: left;
+  color: #23232e;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto; 
+}
+
+#introduction{
+  margin-left:25%;
+  margin-right:20%;
+  border-color: var(  --bg-primary  );
+}
+
+
+.cardTitle{
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: #23232e;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+.cardText{
+  font-size: 22px;
+  font-weight: 200px;
+  font-family: "Great Vibes", cursive; 
+  text-shadow: 0 1px 1px #fff;}
+
+.cardFooter ul{
+    list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.cardFooter img{
+  margin-left: 1rem;
+  
+  width: 2rem;
+  height: 2rem ;
+}
+.cardBody .quote{
+  text-align: right;
+}
+.cardBody .cap{
+  font-family: 'Muli', sans-serif; 
+  text-decoration: underline;
+  font-size: 32px;
+}
+
+
+
+body {
+  color: black;
+  background-color: #e4e4e4;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #e4bbcf;
+}
+
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+.navbar {
+  /* height: 100%; */
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+  position: fixed;
+  background-color: var(--bg-primary);
+  transition: width 600ms ease;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: row;
+  align-items: left;
+  /* height: 100%; */
+  width: 100%;
+  
+}
+.navbar-nav2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 100%;
+}
+.navbar-nav2 a{
+  color: var(--bg-primary);
+}
+.nav-item {
+  width: 100%;
+}
+
+
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  color: var(--txt-secondary);
+  text-decoration: none;
+  transition: var(--trans-time);
+  width:8rem;
+}
+
+.link-text {
+  display: block;
+  margin-left: 0rem;
+  font-family:  'Original Surfer', cursive;
+
+}
+
+.link-text:hover{
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+  font-size: larger;
+}
+
+.nav-link i {
+  min-width: 1rem;
+  margin: 0 1rem
+}
+.logo{
+  text-align: center;
+  letter-spacing: 5px;
+  color: var(--txt-primary); 
+  margin-bottom: 1.5rem;
+  
+}
+.logo h2{
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Lobster', cursive;
+  font-size: 48px;
+}
+.link-div{
+  display: flex;
+  justify-content: center;
+  flex-direction:row;
+  list-style: none;
+  padding: 0;
+  
+}
+.link-li{
+  margin-left: 1rem;
+}
+
+.gallary{
+  padding-top: 0%;
+  margin-left: 12vw;  
+  margin-right: 5vw;
+  border-width: 10px;
+  width: 85vw;
+  padding-top: 2vh;
+  
+}
+.cardDeck{
+  margin-left: 15%;
+  margin-right:15%;
+  margin-top: 5%;
+  width: 19.6vw;
+  height: 65vh;
+}
+.carousel{
+  margin-bottom: 5%;
+  margin-top: 0;
+  border-radius: 15px;
+  height: 70vh;
+  background-color: var(--bg-primary);
+}
+.card-img-top{
+  height: 30vh;
+}

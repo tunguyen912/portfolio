@@ -1,0 +1,19 @@
+language: node_js
+
+cache: npm
+
+before_install:
+  - "npm config set spin false"
+  - "npm i -g now"
+
+
+install:
+  - npm install
+  
+deploy:
+  provider: script
+  script: bash scripts/deploy.sh
+  skip_cleanup: true  
+script:
+  - npm run-script build
+  - npm test
